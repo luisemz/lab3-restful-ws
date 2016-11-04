@@ -317,7 +317,7 @@ public class AddressBookServiceTest {
 		
 		// --3-- Verify that it is idempotent
 		assertEquals(size, sizeRes);
-		assertEquals(sizeRes, sizeRes1);
+		assertEquals(size, sizeRes1);
 		assertEquals(juanUpdated.getName(), 
 				response1.readEntity(Person.class).getName());
 
